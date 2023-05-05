@@ -118,10 +118,13 @@ const MIN = 1000
 const MAX = 9999
 const myNumbers = [2355, 7235, 8135, 1762, 2361, 8351]
 const random = (Math.floor(Math.random() * (MAX - MIN +1)) + MIN);
+console.log(random);
 
 let number = function () {
-    if(random !== myNumbers) {
-    myNumbers.push(random)
+  for(let item of myNumbers){
+      if(random !== myNumbers) {
+      myNumbers.push(random)
+    }
   }
 };
 console.log(myNumbers);
